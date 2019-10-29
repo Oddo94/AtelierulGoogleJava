@@ -1,7 +1,7 @@
 
 public class FooBarQixChallenge {
 	
-	public String compute(int number) {
+	public String compute2(int number) {
 		String first ="";
 	
 			
@@ -21,9 +21,9 @@ public class FooBarQixChallenge {
 		String second = ""; 
 		
 		for(int i = 0; i < nr.length(); i++) {
-			if(nr.charAt(i) =='0') {
-			   second += '*';
-			   
+			if(nr.charAt(i) == '0') {
+				second += '*';
+				
 			}else if(nr.charAt(i) == '7') {
 				second +="Qix";
 				
@@ -41,20 +41,18 @@ public class FooBarQixChallenge {
 	}
 	
 	
+	
 	public static void main(String[] args) {
 		
 		FooBarQixChallenge obj = new FooBarQixChallenge();
 		
-		for(int i = 1; i <= 105; i++) {
+		for(int i = 100; i <= 105; i++) {
 			
-			if(obj.compute(i).equals("")) {
+			if(obj.compute2(i).equals("")) {
 				System.out.println(i + " => " + i);
 				
-			}else if(obj.compute(i).equals("*")) {
-				System.out.println(i + " => " + Integer.toString(i).replace('0', '*'));
-				
 			}else {
-				System.out.println(i + " => " + obj.compute(i));
+				System.out.println(i + " => " + obj.compute2(i));
 			}
 			
 		
