@@ -5,10 +5,10 @@ public class Fighter {
 	private int damagePerAttack;
 	
 	
-	public Fighter(String name, int health, int damagePerAttack) {
+	public Fighter(String name, int health) {
 		this.name = name;
 		this.health = health;
-		this.damagePerAttack = damagePerAttack;
+		this.damagePerAttack = (int)(Math.random() * 100) + 1;//se initializeaza valoarea atacului cu un numar generat aleator
 	}
 	
 	public int attack(int opponentHealth, int attackerDamagePerAttack) {

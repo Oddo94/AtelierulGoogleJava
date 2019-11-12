@@ -14,6 +14,8 @@ public class BoxingMatch {
 	public String fight() {
 		int fighter1Health = Fighter1.getHealth();
 		int fighter2Health = Fighter2.getHealth();
+	
+		
 		String name;
 		
 		while(fighter1Health > 0 && fighter2Health > 0) {
